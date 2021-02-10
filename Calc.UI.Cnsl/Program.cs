@@ -16,7 +16,8 @@ namespace Calc.UI.Cnsl
 
         static void TestOverflow()
         {
-            int x = int.MaxValue;
+            uint x = uint.MaxValue;
+            Console.WriteLine($"max value: {x}");
             Console.WriteLine(Calculator.Simple.Add(x, 1));
         }
 
